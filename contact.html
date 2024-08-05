@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
     <!-- font inter -->
@@ -13,15 +13,35 @@
       rel="stylesheet"
     />
     <title>Contact - Diana Guerreiro</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href="./about.html" class="nav-link">about</a>
-        <a href="./work.html" class="nav-link">work</a>
-        <a href="./contact.html" class="nav-link">contact</a>
+      <a href="/" class="nav-link">home</a>
+      <a href="./about.html" class="nav-link">about</a>
+      <a href="./work.html" class="nav-link">work</a>
+      <a href="./contact.html" class="nav-link">contact</a>
     </nav>
     <main>
-        wwwavvves@gmail.com
+      <div id="email">wwwavvves@gmail.com</div>
+      <button onclick="copyText()" id="copy-btn">Copy</button>
     </main>
-</body>
+
+    <script>
+      function copyText() {
+        let text = document.getElementById("email");
+        let btn = document.getElementById("copy-btn");
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(text.innerText);
+
+        // Change button text
+        if (btn.innerText === "Copy") {
+          btn.innerText = "Copied";
+        } else {
+          btn.innerText = "Copy";
+          navigator.clipboard.writeText("");
+        }
+      }
+    </script>
+  </body>
 </html>
