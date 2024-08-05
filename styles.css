@@ -1,0 +1,32 @@
+:root {
+  --off-black: #1b1212;
+  --off-white: #faf9f6;
+}
+
+@font-face {
+  font-family: pilowlava;
+  src: url(./font/pilowlava-regular.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: pilowlava;
+  color: var(--off-black);
+  background-color: var(--off-white);
+}
+.swarm {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hello-world h1 {
+  font-size: 120px;
+}
