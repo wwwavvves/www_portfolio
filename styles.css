@@ -15,18 +15,52 @@
 }
 
 body {
-  margin: 0;
   overflow: hidden;
   font-family: pilowlava;
   color: var(--off-black);
   background-color: var(--off-white);
 }
+
 .swarm {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
 }
 
 .hello-world h1 {
   font-size: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    column-gap: 20px;
+    margin: 20px;
+}
+
+.nav-link {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--off-black);
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-bio {
+  font-family: "Inter", sans-serif;
+}
+
+.about-img img {
+  width: 300px;
+  display: none;
+}
+
+@media (any-pointer: coarse) {
+  #swarm {
+    display: none;
+  }
 }
