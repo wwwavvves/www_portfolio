@@ -24,24 +24,10 @@
     <main>
       <div id="email">wwwavvves@gmail.com</div>
       <button onclick="copyText()" id="copy-btn">Copy</button>
+      <a href="https://github.com/wwwavvves" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
     </main>
 
-    <script>
-      function copyText() {
-        let text = document.getElementById("email");
-        let btn = document.getElementById("copy-btn");
-
-        // Copy the text inside the text field
-        navigator.clipboard.writeText(text.innerText);
-
-        // Change button text
-        if (btn.innerText === "Copy") {
-          btn.innerText = "Copied";
-        } else {
-          btn.innerText = "Copy";
-          navigator.clipboard.writeText("");
-        }
-      }
-    </script>
+    <script src="./copy-text.js"></script>
   </body>
 </html>

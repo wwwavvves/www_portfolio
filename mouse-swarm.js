@@ -4,19 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const delay = 3; // Delay in frames for each SVG
   const positions = []; // Array to store mouse positions
   const svgs = []; // Array to store SVG elements
-  let initialMousePos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-
-  // Capture the initial mouse position
-  document.addEventListener("mousemove", (event) => {
-    initialMousePos = { x: event.clientX, y: event.clientY };
-    // Remove the event listener after capturing the initial position
-    document.removeEventListener("mousemove", arguments.callee);
-  });
-
-  // Initialize the array with initial mouse position
-  for (let i = 0; i < numSvgs * delay; i++) {
-    positions.push({ x: initialMousePos.x, y: initialMousePos.y });
-  }
 
   // Function to create circles and ellipses with unique colors
   function createShape(index) {
@@ -43,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
           circle.setAttribute("fill", "#B4FFB2"); // Light green
           break;
         case 4:
-          circle.setAttribute("fill", "#DFC6FF "); // Light purple
+          circle.setAttribute("fill", "#DFC6FF"); // Light purple
           break;
         case 6:
           circle.setAttribute("fill", "#FFB7F8"); // Pink
@@ -68,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ellipse.setAttribute("fill", "#FF0000"); // Red
           break;
         case 5:
-          ellipse.setAttribute("fill", "#FF8A00 "); // Orange
+          ellipse.setAttribute("fill", "#FF8A00"); // Orange
           break;
       }
       svg.appendChild(ellipse);
@@ -77,20 +64,39 @@ document.addEventListener("DOMContentLoaded", () => {
     return svg;
   }
 
-  // Create SVG elements with circles and ellipses
-  for (let i = 0; i < numSvgs; i++) {
-    const svg = createShape(i);
-    swarmContainer.appendChild(svg);
+  // Named function to capture the initial mouse position and initialize the shapes
+  function captureInitialMousePos(event) {
+    const initialMousePos = { x: event.clientX, y: event.clientY };
 
-    // Store initial properties for spring physics
-    svgs.push({
-      element: svg,
-      x: initialMousePos.x,
-      y: initialMousePos.y,
-      vx: 0,
-      vy: 0,
-    });
+    // Initialize the array with initial mouse position
+    for (let i = 0; i < numSvgs * delay; i++) {
+      positions.push({ x: initialMousePos.x, y: initialMousePos.y });
+    }
+
+    // Create SVG elements with circles and ellipses
+    for (let i = 0; i < numSvgs; i++) {
+      const svg = createShape(i);
+      swarmContainer.appendChild(svg);
+
+      // Store initial properties for spring physics
+      svgs.push({
+        element: svg,
+        x: initialMousePos.x,
+        y: initialMousePos.y,
+        vx: 0,
+        vy: 0,
+      });
+    }
+
+    // Start the animation
+    updateSvgPositions();
+
+    // Remove the event listener after initializing the shapes
+    document.removeEventListener("mousemove", captureInitialMousePos);
   }
+
+  // Add event listener for capturing initial mouse position
+  document.addEventListener("mousemove", captureInitialMousePos);
 
   // Update the positions array with the current mouse position
   document.addEventListener("mousemove", (event) => {
@@ -129,9 +135,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     requestAnimationFrame(updateSvgPositions); // Continue the animation
   }
-
-  // Wait for a short period to ensure the initial mouse position is captured
-  setTimeout(() => {
-    updateSvgPositions(); // Start the animation
-  }, 100);
 });
