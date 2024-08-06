@@ -15,11 +15,28 @@
     <title>Work - Diana Guerreiro</title>
 </head>
 <body>
-    <nav>
-        <a href="/" class="nav-link">home</a>
-        <a href="./about.html" class="nav-link">about</a>
-        <a href="./work.html" class="nav-link">work</a>
-        <a href="./contact.html" class="nav-link">contact</a>
+        <nav>
+      <button id="btn-open" class="btn-menu btn-open">
+        <img
+          src="./images/menu-btn-to-open.svg"
+          alt=""
+        />
+      </button>
+      <div class="nav-menu">
+        <button id="btn-close" class="btn-menu btn-close">
+        <img
+          src="./images/menu-btn-to-close.svg"
+          alt=""
+          id="svgOpen"
+        />
+      </button>
+      <ul class="list-nav-links">
+          <li><a href="/" class="nav-link">home</a></li>
+          <li><a href="./about.html" class="nav-link">about</a></li>
+          <li><a href="./work.html" class="nav-link">work</a></li>
+          <li><a href="./contact.html" class="nav-link">contact</a></li>
+        </ul>
+      </div>
     </nav>
     <main>
            <h3>work work work work work work</h3>
@@ -33,5 +50,7 @@
            <a href="https://ephemeral-sprite-edfb3c.netlify.app/" target="_blank">SheCodes React - Weather App</a>
            <a href="https://warm-blancmange-79bf66.netlify.app/" target="_blank">SheCodes React Add-on - Dictionary</a>
     </main>
+
+    <script src="./hamb-menu.js"></script>
 </body>
 </html>

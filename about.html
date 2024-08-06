@@ -16,29 +16,47 @@
   </head>
   <body>
     <nav>
-        <a href="/" class="nav-link">home</a>
-        <a href="./about.html" class="nav-link">about</a>
-        <a href="./work.html" class="nav-link">work</a>
-        <a href="./contact.html" class="nav-link">contact</a>
+      <button id="btn-open" class="btn-menu btn-open">
+        <img src="./images/menu-btn-to-open.svg" alt="" />
+      </button>
+      <div class="nav-menu">
+        <button id="btn-close" class="btn-menu btn-close">
+          <img src="./images/menu-btn-to-close.svg" alt="" id="svgOpen" />
+        </button>
+        <ul class="list-nav-links">
+          <li><a href="/" class="nav-link">home</a></li>
+          <li><a href="./about.html" class="nav-link">about</a></li>
+          <li><a href="./work.html" class="nav-link">work</a></li>
+          <li><a href="./contact.html" class="nav-link">contact</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="about-section">
-      <div class="about-bio">
-        <h3>I'm Diana Guerreiro and I'm a front-end developer currently based in
-        Lisbon, Portugal.</h3>
-        <p>With a BA in Multimedia Art, a postgraduate in Art
-        Criticism, Theories and Curatorial Studies, both from the Faculty of
-        Fine Arts of Lisbon, a Web Design Course from the Lisbon School of
-        Design, and a Front-end Development Course from SheCodes, works on web (design and) development, with a focus on
-        exploring the possibilities at the intersection of creativity and
-        technology. Mediating experimentation, sustainability and accessibility.
-        Interested in multidisciplinarity and interdisciplinarity,
-        interactivity, creative coding, playfulness and (visual) communication
-        in times of shrinking attention spans.</p>
-         
-      </div>
-      <div class="about-img">
-        <img src="./images/wwwvvv.png" alt="" />
-      </div>
+        <div class="about-bio">
+          <h3>
+            I'm Diana Guerreiro and I'm a front-end developer currently based in
+            Lisbon, Portugal.
+          </h3>
+          <p>
+            With a BA in Multimedia Art, a postgraduate in Art Criticism,
+            Theories and Curatorial Studies, both from the Faculty of Fine Arts
+            of Lisbon, a Web Design Course from the Lisbon School of Design, and
+            a Front-end Development Course from SheCodes, works on web (design
+            and) development, with a focus on exploring the possibilities at the
+            intersection of creativity and technology. Mediating
+            experimentation, sustainability and accessibility. Interested in
+            multidisciplinarity and interdisciplinarity, interactivity, creative
+            coding, playfulness and (visual) communication in times of shrinking
+            attention spans.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="./images/wwwvvv.png" alt="" />
+        </div>
+        <div class="education">Education</div>
+        <div class="workshops">Workshops</div>
     </main>
+
+    <script src="./hamb-menu.js"></script>
   </body>
 </html>
