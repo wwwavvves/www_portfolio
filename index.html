@@ -17,15 +17,34 @@
   <body>
     <div id="swarm"></div>
     <nav>
-      <a href="/" class="nav-link">home</a>
-      <a href="./about.html" class="nav-link">about</a>
-      <a href="./work.html" class="nav-link">work</a>
-      <a href="./contact.html" class="nav-link">contact</a>
+      <button id="btn-open" class="nav-to-open">
+        <img
+          src="./images/menu-btn-to-open.svg"
+          alt=""
+          width="80" height="80"
+        />
+      </button>
+      <div class="nav-menu">
+        <button id="btn-close" class="nav-to-close">
+        <img
+          src="./images/menu-btn-to-close.svg"
+          alt=""
+          width="80" height="80"
+        />
+      </button>
+      <ul class="list-nav-links">
+          <li><a href="/" class="nav-link">home</a></li>
+          <li><a href="./about.html" class="nav-link">about</a></li>
+          <li><a href="./work.html" class="nav-link">work</a></li>
+          <li><a href="./contact.html" class="nav-link">contact</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="hello-world">
       <h1>Hi, I'm Diana and I'm a front-end developer.</h1>
     </main>
 
+    <script src="./hamb-menu.js"></script>
     <script src="./mouse-swarm.js"></script>
   </body>
 </html>
