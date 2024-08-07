@@ -3,7 +3,7 @@ function copyText() {
   let btn = document.getElementById("copy-btn");
 
   // Copy the text inside the text field
-  navigator.clipboard.writeText(text.innerText);
+  navigator.clipboard.writeText("wwwavvves@gmail.com");
 
   // Change button text
   if (btn.innerText === "Copy") {

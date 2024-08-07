@@ -1,6 +1,10 @@
 :root {
   --off-black: #1b1212;
   --off-white: #faf9f6;
+  --primary-color: #aba9ce;
+  --secondary-color: #cccea9;
+  --fun-font: "Pilowlava Regular";
+  --fun-font-hover: "Pilowlava Atome";
 }
 
 @font-face {
@@ -28,9 +32,14 @@
 
 body {
   overflow: hidden;
-  /* font-family: "Pilowlava Regular"; */
+  font-family: Inter, sans-serif;
   color: var(--off-black);
-  background-color: var(--off-white);
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+
+.heading {
+  font-family: var(--fun-font);
 }
 
 .swarm {
@@ -38,6 +47,23 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 10px;
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  background: none;
+  border: none;
 }
 
 .btn-menu {
@@ -51,14 +77,17 @@ body {
 
 .nav-menu {
   position: fixed;
-  background-color: pink;
+  background-color: var(--secondary-color);
   text-align: center;
   inset: 0;
-  translate: 100vw 0;
-  transition: translate 0.5s ease-in-out;
+  display: none;
 }
 
-.btn-open,
+.btn-open {
+  background: none;
+  border: none;
+}
+
 .btn-close {
   display: block;
   background: none;
@@ -66,14 +95,37 @@ body {
   margin-inline-start: auto;
 }
 
+.list-nav-links {
+  margin-top: 80px;
+}
+
 .list-nav-links li {
   list-style-type: none;
 }
 
-.nav-link {
-  font-size: 30px;
+.nav-link,
+.contact-link {
+  font-family: var(--fun-font);
+  font-size: 80px;
   text-decoration: none;
-  color: var(--off-black);
+  color: var(--off-white);
+}
+
+.nav-link:hover {
+  font-family: var(--fun-font-hover);
+}
+
+.selected {
+  color: var(--primary-color);
+}
+
+.hello-world {
+  margin-top: 50px;
+}
+
+.hello-world h1 {
+  font-size: 100px;
+  text-align: center;
 }
 
 .about-bio {
@@ -96,8 +148,34 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.contacts {
+  text-align: center;
+}
+
+.contacts > * {
+  font-family: var(--fun-font);
+}
+
+.email-star {
+  width: 120px;
+}
+
 @media (any-pointer: coarse) {
   #swarm {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hello-world h1,
+  .nav-link {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hello-world h1,
+  .nav-link {
+    font-size: 46px;
   }
 }

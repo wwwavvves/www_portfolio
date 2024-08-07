@@ -15,27 +15,50 @@
     <title>Contact - Diana Guerreiro</title>
   </head>
   <body>
-    <nav>
-      <button id="btn-open" class="btn-menu btn-open">
-        <img src="./images/menu-btn-to-open.svg" alt="" />
+    <!-- HEADER -->
+    <header>
+      <button class="logo">
+        <a href="./index.html"
+          ><img src="./images/menu-btn-to-open.svg" alt=""
+        /></a>
       </button>
-      <div class="nav-menu">
-        <button id="btn-close" class="btn-menu btn-close">
-          <img src="./images/menu-btn-to-close.svg" alt="" id="svgOpen" />
+      <nav>
+        <button id="btn-open" class="btn-menu btn-open">
+          <img src="./images/menu-btn-to-open.svg" alt="" />
         </button>
-        <ul class="list-nav-links">
-          <li><a href="/" class="nav-link">home</a></li>
-          <li><a href="./about.html" class="nav-link">about</a></li>
-          <li><a href="./work.html" class="nav-link">work</a></li>
-          <li><a href="./contact.html" class="nav-link">contact</a></li>
-        </ul>
+        <div class="nav-menu">
+          <button id="btn-close" class="btn-menu btn-close">
+            <img src="./images/menu-btn-to-close.svg" alt="" id="svgOpen" />
+          </button>
+          <ul class="list-nav-links">
+            <li><a href="./about.html" class="nav-link">about</a></li>
+            <li><a href="./work.html" class="nav-link">work</a></li>
+            <li>
+              <a href="./contact.html" class="nav-link selected">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="contacts">
+      <div class="copy">
+        <span class="contact-link" id="email">Email</span>
+        <button onclick="copyText()" id="copy-btn">
+          <img src="./images/star.svg" alt="" class="email-star" />
+          <span class="email-copy-text">Copy</span>
+        </button>
       </div>
-    </nav>
-    <main>
-      <div id="email">wwwavvves@gmail.com</div>
-      <button onclick="copyText()" id="copy-btn">Copy</button>
-      <a href="https://github.com/wwwavvves" target="_blank">GitHub</a>
-      <a href="#" target="_blank">LinkedIn</a>
+      <div>
+        <a
+          href="https://github.com/wwwavvves"
+          target="_blank"
+          class="contact-link"
+          >GitHub</a
+        >
+      </div>
+      <div>
+        <a href="#" target="_blank" class="contact-link">LinkedIn</a>
+      </div>
     </main>
 
     <script src="./hamb-menu.js"></script>
