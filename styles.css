@@ -111,7 +111,7 @@ header {
   color: var(--off-white);
 }
 
-.nav-link:hover {
+a:hover {
   font-family: var(--fun-font-hover);
 }
 
@@ -168,14 +168,16 @@ header {
 
 @media (max-width: 768px) {
   .hello-world h1,
-  .nav-link {
+  .nav-link,
+  .contact-link {
     font-size: 70px;
   }
 }
 
 @media (max-width: 576px) {
   .hello-world h1,
-  .nav-link {
+  .nav-link,
+  .contact-link {
     font-size: 46px;
   }
 }
