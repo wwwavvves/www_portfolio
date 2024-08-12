@@ -31,7 +31,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Inter, sans-serif;
   color: var(--off-black);
   background-color: var(--primary-color);
@@ -73,6 +73,7 @@ header {
     width: 80px;
     height: 80px;
   }
+  cursor: pointer;
 }
 
 .nav-menu {
@@ -137,15 +138,15 @@ a:hover {
   display: none;
 }
 
+.list {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
 #copy-btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-.about-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .contacts {
@@ -161,6 +162,10 @@ a:hover {
 }
 
 @media (any-pointer: coarse) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   #swarm {
     display: none;
   }
