@@ -110,11 +110,14 @@ header {
   font-size: 80px;
   text-decoration: none;
   color: var(--off-white);
+
+  
 }
 
-a:hover {
-  font-family: var(--fun-font-hover);
-}
+.nav-link:hover,
+.contact-link:hover {
+    font-family: var(--fun-font-hover);
+  }
 
 .selected {
   color: var(--primary-color);
@@ -138,15 +141,33 @@ a:hover {
   display: none;
 }
 
-.list {
+.work-grid {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  a {
+    text-decoration: none;
+    color: var(--off-white);
+    font-weight: bold;
+  }
+}
+
+.project-image {
+  max-width: 100%;
 }
 
 #copy-btn {
-  border: none;
-  background-color: transparent;
   cursor: pointer;
+  position: relative;
+  width: 140px;
+}
+
+.email-copy-text {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contacts {
