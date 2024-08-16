@@ -1,0 +1,185 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "esternocleidomastoideo",
+      "task": "Design and development",
+      "description": "Built with HTML, CSS, JavaScript and Bootstrap",
+      "link": "https://e-s-t.netlify.app"
+    },
+    {
+      "id": 2,
+      "title": "Catarina Real (Portfolio)",
+      "task": "Design and development",
+      "description": "Built with HTML, CSS, JavaScript and p5.js",
+      "link": "https://catarinareal.xyz/"
+    },
+    {
+      "id": 3,
+      "title": "Weather App (v1) - SheCodes Plus",
+      "task": "Development",
+      "description": "Built with HTML, CSS and JavaScript",
+      "link": "https://shecodes-plus-weather-app-dg.netlify.app"
+    },
+    {
+      "id": 4,
+      "title": "World Clock - SheCodes Plus Add-on",
+      "task": "Development",
+      "description": "Built with HTML, CSS and JavaScript",
+      "link": "https://shecodes-plus-addon-world-clock-dg.netlify.app"
+    },
+    {
+      "id": 5,
+      "title": "AI Poem Generator - SheCodes AI Add-on",
+      "task": "Development",
+      "description": "Built with HTML, CSS and JavaScript",
+      "link": "https://shecodes-ai-addon-poem-generator-dg.netlify.app"
+    },
+    {
+      "id": 6,
+      "title": "Portfolio - SheCodes Responsive",
+      "task": "Development",
+      "description": "Built with HTML, CSS, JavaScript and Bootstrap",
+      "link": "https://shecodes-responsive-portfolio-dg.netlify.app"
+    },
+    {
+      "id": 7,
+      "title": "Single-page Website - SheCodes Responsive Add-on",
+      "task": "Development",
+      "description": "Built with HTML and CSS",
+      "link": "https://shecodes-responsive-addon-one-page-dg.netlify.app"
+    },
+    {
+      "id": 8,
+      "title": "Weather App (v2) - SheCodes React",
+      "task": "Development",
+      "description": "Built with HTML, CSS and React",
+      "link": "https://shecodes-react-weather-app-dg.netlify.app"
+    },
+    {
+      "id": 9,
+      "title": "Dictionary - SheCodes React Add-on",
+      "task": "Design and development",
+      "description": "Built with HTML, CSS and React",
+      "link": "https://shecodes-react-dictionary-dg.netlify.app"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "BA Multimedia Arts - Interactive Environments",
+      "institution": "Faculty of Fine Arts of the University of Lisbon",
+      "year": "2013"
+    },
+    {
+      "id": 2,
+      "degree": "PG Art Criticism, Theories and Curatorial Studies",
+      "institution": "Faculty of Fine Arts of the University of Lisbon",
+      "year": "2016"
+    },
+    {
+      "id": 3,
+      "degree": "Web Design",
+      "institution": "Lisbon School of Design",
+      "year": "2021"
+    },
+    {
+      "id": 4,
+      "degree": "Front-end Bootcamp",
+      "institution": "SheCodes",
+      "year": "2024"
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "title": "Interactive artifacts + radio-frequency identification (IDRF) + Scratch",
+      "instructor": "FBAUL",
+      "year": "2011"
+    },
+    {
+      "id": 2,
+      "title": "Screen Printing",
+      "instructor": "FICA - Creative Workshop",
+      "year": "2018"
+    },
+    {
+      "id": 3,
+      "title": "Woodworking",
+      "instructor": "FICA - Creative Workshop",
+      "year": "2018"
+    },
+    {
+      "id": 4,
+      "title": "Communal computing",
+      "instructor": "Chris Butler",
+      "year": "2018"
+    },
+    {
+      "id": 5,
+      "title": "Practical fundamentals of electronics for sound art",
+      "instructor": "Electronic Warfare - Diogo Melo",
+      "year": "2021"
+    },
+    {
+      "id": 6,
+      "title": "Playing with PoseNet in ML5",
+      "instructor": "Erik Katerborg",
+      "year": "2021"
+    },
+    {
+      "id": 7,
+      "title": "Creative web design: planning and coding from scratch",
+      "instructor": "DXR Zone - Rifke Sadleir and Dan Baragwanath",
+      "year": "2022"
+    },
+    {
+      "id": 8,
+      "title": "Creative coding: making visuals with JavaScript",
+      "instructor": "Bruno Imbrizi",
+      "year": "2022"
+    },
+    {
+      "id": 9,
+      "title": "Good old d(AI)s: image datasets and algorithm-based creative explorations",
+      "instructor": "Aarati Akkapeddi",
+      "year": "2022"
+    },
+    {
+      "id": 10,
+      "title": "N(AI)ve poetry collaborations",
+      "instructor": "Andreas Refsgaard",
+      "year": "2022"
+    },
+    {
+      "id": 11,
+      "title": "",
+      "instructor": "",
+      "year": "2022"
+    },
+    {
+      "id": 12,
+      "title": "AI playground: learn to fingerp(AI)nt with words",
+      "instructor": "Computational Mama",
+      "year": "2022"
+    },
+    {
+      "id": 13,
+      "title": "Composing chrom(AI)tic resonances: turn images into short musical scores",
+      "instructor": "Soyun Park",
+      "year": "2022"
+    },
+    {
+      "id": 14,
+      "title": "Synthesize_Her: Quantum Listening for sound technology & sound wave theory",
+      "instructor": "Viva Dean",
+      "year": "2023"
+    },
+    {
+      "id": 14,
+      "title": "Synthesize_Her: Quantum Listening for sound technology & sound wave theory",
+      "instructor": "Viva Dean",
+      "year": "2023"
+    }
+  ]
+}
