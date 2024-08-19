@@ -113,7 +113,7 @@
       "id": 4,
       "title": "Communal computing",
       "instructor": "Chris Butler",
-      "year": "2018"
+      "year": "2021"
     },
     {
       "id": 5,
@@ -153,33 +153,27 @@
     },
     {
       "id": 11,
-      "title": "",
-      "instructor": "",
-      "year": "2022"
-    },
-    {
-      "id": 12,
       "title": "AI playground: learn to fingerp(AI)nt with words",
       "instructor": "Computational Mama",
       "year": "2022"
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "Composing chrom(AI)tic resonances: turn images into short musical scores",
       "instructor": "Soyun Park",
       "year": "2022"
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "Synthesize_Her: Quantum Listening for sound technology & sound wave theory",
       "instructor": "Viva Dean",
       "year": "2023"
     },
     {
       "id": 14,
-      "title": "Synthesize_Her: Quantum Listening for sound technology & sound wave theory",
-      "instructor": "Viva Dean",
-      "year": "2023"
+      "title": "Color Theory: Exploration & Application",
+      "instructor": "Richard Mehl",
+      "year": "Ongoing"
     }
   ]
 }
