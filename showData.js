@@ -8,16 +8,39 @@ fetch("data.json")
   })
   .then((data) => {
     // Handle the data here
-    // displayProjects(data.projects);
-    // displayEducation(data.education);
-    displaySomething();
+    displayEducation(data.education);
+    displayWorkshops(data.workshops);
   })
   .catch((error) => {
     console.error("There has been a problem with your fetch operation:", error);
   });
 
+function displayEducation(education) {
+  let educationDiv = document.querySelector("#education");
+  education
+    .slice()
+    .reverse()
+    .forEach((element) => {
+      const tableRow = document.createElement("tr");
+      tableRow.innerHTML = `
+      <td>${element.year}</td>
+      <td>${element.degree}</td>
+    `;
+      educationDiv.appendChild(tableRow);
+    });
+}
 
-  displaySomething() {
-    let potato = document.querySelector("#experimental");
-    potato.innerHTML = "Hello";
-  };
+function displayWorkshops(workshops) {
+  let workshopsDiv = document.querySelector("#workshops");
+  workshops
+    .slice()
+    .reverse()
+    .forEach((element) => {
+      const tableRow = document.createElement("tr");
+      tableRow.innerHTML = `
+      <td>${element.year}</td>
+      <td>${element.title}</td>
+    `;
+      workshopsDiv.appendChild(tableRow);
+    });
+}

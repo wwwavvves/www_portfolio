@@ -69,14 +69,18 @@ header {
   min-height: 100vh;
   position: sticky;
   top: 0;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .tables {
-  height: 100%;
+  min-height: 100vh;
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
+}
+
+table {
+  border-spacing: 10px;
 }
 
 .temp-work{
