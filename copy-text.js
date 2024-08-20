@@ -1,8 +1,8 @@
-function copyEmail() {
-  let copySvg = document.getElementById("copy-btn");
-
-  // Copy the text inside the text field
+let copySvg = document.getElementById("copy-btn");
+copySvg.addEventListener("click", e => {
   navigator.clipboard.writeText("wwwavvves@gmail.com");
-
-  // Change button text
-}
+  copySvg.src = "./images/copied.svg";
+  setTimeout(() => {
+    copySvg.src = "./images/copy.svg";
+  }, 3000);
+});

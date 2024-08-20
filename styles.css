@@ -2,7 +2,7 @@
   --off-black: #1b1212;
   --off-white: #faf9f6;
   --primary-color: #aba9ce;
-  --secondary-color: #FFB7F8;
+  --secondary-color: #ffb7f8;
   --fun-font: "Pilowlava Regular";
   --fun-font-hover: "Pilowlava Atome";
 }
@@ -38,6 +38,7 @@ body {
   color: var(--off-white);
 }
 
+/* what is this? fix */
 .heading {
   font-family: var(--fun-font);
 }
@@ -57,8 +58,14 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  background-color: transparent;
 }
 
+main {
+  padding-top: 150px;
+}
+
+/* ABOUT SECTION  */
 .about-section {
   min-height: 100vh;
 }
@@ -83,7 +90,8 @@ table {
   border-spacing: 10px;
 }
 
-.temp-work{
+/* WORK SECTION */
+.temp-work {
   a {
     font-size: 64px;
     text-decoration: none;
@@ -107,7 +115,6 @@ table {
   overflow: hidden;
   margin-bottom: 20px; /* Optional: To add some spacing between wavy lines */
 }
-
 
 .logo {
   margin: 10px;
@@ -169,15 +176,11 @@ table {
 
 .nav-link:hover,
 .contact-link:hover {
-    font-family: var(--fun-font-hover);
-  }
+  font-family: var(--fun-font-hover);
+}
 
 .selected {
   color: var(--primary-color);
-}
-
-.hello-world {
-  margin-top: 50px;
 }
 
 .hello-world h1 {
@@ -187,11 +190,6 @@ table {
 
 .about-bio {
   font-family: "Inter", sans-serif;
-}
-
-.about-img img {
-  width: 300px;
-  display: none;
 }
 
 .work-grid {
@@ -206,28 +204,33 @@ table {
   }
 }
 
-.project-image {
-  max-width: 100%;
-}
 
-#copy-btn {
-  cursor: pointer;
-  position: relative;
-  width: 140px;
-}
-
-.email-copy-text {
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
+/* CONTACT SECTION  */
 .contacts {
   text-align: center;
 }
 
 .contacts > * {
+  font-family: var(--fun-font);
+}
+
+#email {
+  position: relative;
+}
+
+#copy-btn {
+  cursor: pointer;
+  width: 140px;
+  position: absolute;
+  left: 92%;
+  bottom: 0;
+}
+
+#email {
+  cursor: default;
+}
+
+#email:hover {
   font-family: var(--fun-font);
 }
 

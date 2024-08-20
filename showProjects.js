@@ -23,22 +23,22 @@ function displayProjects(projects) {
       const projectRow = document.createElement("div");
       projectRow.classList.add("temp-title");
       projectRow.innerHTML = `
-            <div>
-                <a
-                href=${element.link}
-                target="_blank"
-                >${element.title}</a
-                >
-                <p>
-                    ${element.task} <br />
-                    ${element.description}
-                </p>
-            </div>
-            <div>
-                <a href=${element.link} target="_blank">
-                    <img src="./images/arrow_blank_link.svg" alt="" width="160px">
-                </a>
-            </div>
+              <div class="temp-work">
+                  <a
+                  href=${element.link}
+                  target="_blank"
+                  >${element.title}</a
+                  >
+                  <p>
+                      ${element.task} <br />
+                      ${element.description}
+                  </p>
+              </div>
+              <div>
+                  <a href=${element.link} target="_blank">
+                      <img src="./images/arrow_blank_link.svg" alt="" width="160px">
+                  </a>
+              </div>
         `;
       projectsContainer.appendChild(projectRow);
     });

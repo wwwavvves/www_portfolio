@@ -16,7 +16,7 @@ fetch("data.json")
   });
 
 function displayEducation(education) {
-  let educationDiv = document.querySelector("#education");
+  let educationContainer = document.querySelector("#education");
   education
     .slice()
     .reverse()
@@ -26,12 +26,12 @@ function displayEducation(education) {
       <td>${element.year}</td>
       <td>${element.degree}</td>
     `;
-      educationDiv.appendChild(tableRow);
+      educationContainer.appendChild(tableRow);
     });
 }
 
 function displayWorkshops(workshops) {
-  let workshopsDiv = document.querySelector("#workshops");
+  let workshopsContainer = document.querySelector("#workshops");
   workshops
     .slice()
     .reverse()
@@ -41,6 +41,6 @@ function displayWorkshops(workshops) {
       <td>${element.year}</td>
       <td>${element.title}</td>
     `;
-      workshopsDiv.appendChild(tableRow);
+      workshopsContainer.appendChild(tableRow);
     });
 }
