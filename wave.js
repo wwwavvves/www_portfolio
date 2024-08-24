@@ -13,7 +13,7 @@ function createWavyLine(container) {
   // Create path element
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("fill", "transparent");
-  path.setAttribute("stroke", "white");
+  path.setAttribute("stroke", "var(--secondary-color)");
   path.setAttribute("stroke-width", "4");
 
   // Create the wave path

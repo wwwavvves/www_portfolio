@@ -34,20 +34,7 @@ body {
   /* overflow: hidden; */
   font-family: Inter, sans-serif;
   color: var(--off-black);
-  background-color: var(--primary-color);
-  color: var(--off-white);
-}
-
-/* what is this? fix */
-.heading {
-  font-family: var(--fun-font);
-}
-
-.swarm {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
+  background-color: var(--off-white);
 }
 
 header {
@@ -61,29 +48,35 @@ header {
   background-color: transparent;
 }
 
-main {
+/* HOMEPAGE */
+.hero {
   padding-top: 150px;
 }
 
-/* ABOUT SECTION  */
-.about-section {
-  min-height: 100vh;
+.hero h1 {
+  font-family: var(--fun-font);
+  font-size: 100px;
+  text-align: center;
 }
+
+/* .swarm {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+} */
+
+/* ABOUT */
 
 .about-bio {
-  background-color: var(--off-white);
-  color: var(--off-black);
-  min-height: 100vh;
-  position: sticky;
-  top: 0;
   font-size: 50px;
+  padding: 150px 40px;
 }
 
-.tables {
+.education-workshops-container {
   min-height: 100vh;
   background-color: var(--primary-color);
-  position: sticky;
-  top: 0;
+  padding: 90px 160px;
 }
 
 table {
@@ -91,11 +84,11 @@ table {
 }
 
 /* WORK SECTION */
-.temp-work {
+.project-details {
   a {
     font-size: 64px;
     text-decoration: none;
-    color: var(--off-white);
+    color: var(--off-black);
     font-weight: 500;
   }
 
@@ -104,16 +97,16 @@ table {
   }
 }
 
-.temp-title {
+.project-name-link {
   display: flex;
   justify-content: space-between;
 }
 
 .wavy-line-container {
   width: 100%;
-  height: 40px; /* Adjust the height as needed */
+  height: 40px;
   overflow: hidden;
-  margin-bottom: 20px; /* Optional: To add some spacing between wavy lines */
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -171,7 +164,7 @@ table {
   font-family: var(--fun-font);
   font-size: 80px;
   text-decoration: none;
-  color: var(--off-white);
+  color: var(--off-black);
 }
 
 .nav-link:hover,
@@ -181,11 +174,6 @@ table {
 
 .selected {
   color: var(--primary-color);
-}
-
-.hello-world h1 {
-  font-size: 100px;
-  text-align: center;
 }
 
 .about-bio {
@@ -203,7 +191,6 @@ table {
     font-weight: bold;
   }
 }
-
 
 /* CONTACT SECTION  */
 .contacts {
@@ -249,7 +236,7 @@ table {
 }
 
 @media (max-width: 768px) {
-  .hello-world h1,
+  .hero h1,
   .nav-link,
   .contact-link {
     font-size: 70px;
@@ -257,7 +244,7 @@ table {
 }
 
 @media (max-width: 576px) {
-  .hello-world h1,
+  .hero h1,
   .nav-link,
   .contact-link {
     font-size: 46px;
@@ -265,7 +252,7 @@ table {
   .about-bio {
     font-size: 30px;
   }
-  .temp-title a {
+  .project-row a {
     font-size: 20px;
     font-weight: bold;
   }

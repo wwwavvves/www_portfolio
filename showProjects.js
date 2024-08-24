@@ -15,31 +15,50 @@ fetch("data.json")
   });
 
 function displayProjects(projects) {
-  let projectsContainer = document.querySelector("#projects-container");
+  const projectsContainer = document.querySelector("#projects-container");
   projects
     .slice()
     .reverse()
-    .forEach((element) => {
+    .forEach((element, i) => {
       const projectRow = document.createElement("div");
-      projectRow.classList.add("temp-title");
+      projectRow.classList.add("project-row");
+
+      const wavyLineContainer = document.createElement("div");
+      wavyLineContainer.classList.add("wavy-line-container");
+
+      wavyLineContainer.textContent = "Test Line";
+
       projectRow.innerHTML = `
-              <div class="temp-work">
-                  <a
-                  href=${element.link}
-                  target="_blank"
-                  >${element.title}</a
-                  >
-                  <p>
-                      ${element.task} <br />
-                      ${element.description}
-                  </p>
-              </div>
-              <div>
-                  <a href=${element.link} target="_blank">
-                      <img src="./images/arrow_blank_link.svg" alt="" width="160px">
-                  </a>
+              <div class="project-name-link">
+                <div class="project-details">
+                    <a
+                    href=${element.link}
+                    target="_blank"
+                    >${element.title}</a
+                    >
+                    <p>
+                        ${element.task} <br />
+                        ${element.description}
+                    </p>
+                </div>
+                <div>
+                    <a href=${element.link} target="_blank">
+                        <img src="./images/arrow_blank_link.svg" alt="" width="160px">
+                    </a>
+                </div>
               </div>
         `;
+
+      projectsContainer.appendChild(wavyLineContainer);
       projectsContainer.appendChild(projectRow);
+
+      if (i === projects.length - 1) {
+        const lastWavyLineContainer = document.createElement("div");
+        lastWavyLineContainer.classList.add("wavy-line-container");
+        projectsContainer.appendChild(lastWavyLineContainer);
+      }
     });
+    
+  // Trigger resize event
+  window.dispatchEvent(new Event("resize"));
 }
