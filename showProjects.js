@@ -38,12 +38,13 @@ function displayProjects(projects) {
                     >
                     <p>
                         ${element.task} <br />
-                        ${element.description}
+                        ${element.description} <br />
+                        ${element.year}
                     </p>
                 </div>
                 <div>
                     <a href=${element.link} target="_blank">
-                        <img src="./images/arrow_blank_link.svg" alt="" width="160px">
+                        <img src="./images/arrow_blank_link.svg" alt="" width="160px" class="arrow-link">
                     </a>
                 </div>
               </div>

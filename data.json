@@ -5,6 +5,7 @@
       "title": "esternocleidomastoideo",
       "task": "Design and development",
       "description": "Built with HTML, CSS, JavaScript and Bootstrap",
+      "year": 2022,
       "link": "https://e-s-t.netlify.app"
     },
     {
@@ -12,6 +13,7 @@
       "title": "Catarina Real (Portfolio)",
       "task": "Design and development",
       "description": "Built with HTML, CSS, JavaScript and p5.js",
+      "year": 2023,
       "link": "https://catarinareal.xyz/"
     },
     {
@@ -19,6 +21,7 @@
       "title": "Weather App (v1) - SheCodes Plus",
       "task": "Development",
       "description": "Built with HTML, CSS and JavaScript",
+      "year": 2024,
       "link": "https://shecodes-plus-weather-app-dg.netlify.app"
     },
     {
@@ -26,6 +29,7 @@
       "title": "World Clock - SheCodes Plus Add-on",
       "task": "Development",
       "description": "Built with HTML, CSS and JavaScript",
+      "year": 2024,
       "link": "https://shecodes-plus-addon-world-clock-dg.netlify.app"
     },
     {
@@ -33,6 +37,7 @@
       "title": "AI Poem Generator - SheCodes AI Add-on",
       "task": "Development",
       "description": "Built with HTML, CSS and JavaScript",
+      "year": 2024,
       "link": "https://shecodes-ai-addon-poem-generator-dg.netlify.app"
     },
     {
@@ -40,6 +45,7 @@
       "title": "Portfolio - SheCodes Responsive",
       "task": "Development",
       "description": "Built with HTML, CSS, JavaScript and Bootstrap",
+      "year": 2024,
       "link": "https://shecodes-responsive-portfolio-dg.netlify.app"
     },
     {
@@ -47,6 +53,7 @@
       "title": "Single-page Website - SheCodes Responsive Add-on",
       "task": "Development",
       "description": "Built with HTML and CSS",
+      "year": 2024,
       "link": "https://shecodes-responsive-addon-one-page-dg.netlify.app"
     },
     {
@@ -54,6 +61,7 @@
       "title": "Weather App (v2) - SheCodes React",
       "task": "Development",
       "description": "Built with HTML, CSS and React",
+      "year": 2024,
       "link": "https://shecodes-react-weather-app-dg.netlify.app"
     },
     {
@@ -61,6 +69,7 @@
       "title": "Dictionary - SheCodes React Add-on",
       "task": "Design and development",
       "description": "Built with HTML, CSS and React",
+      "year": 2024,
       "link": "https://shecodes-react-dictionary-dg.netlify.app"
     }
   ],

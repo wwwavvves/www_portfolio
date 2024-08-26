@@ -153,11 +153,13 @@ header {
 /* ABOUT */
 .about-bio {
   font-size: 50px;
+  padding: 0 30px;
 }
 
 .education-workshops-container {
   background-color: var(--primary-color);
   margin-top: 90px;
+  padding: 0 30px;
 }
 
 .education-container {
@@ -169,6 +171,12 @@ table {
 }
 
 /* WORK SECTION */
+.wavy-line-container {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
 .project-row {
   max-width: 1200px;
   margin: 0 auto;
@@ -197,28 +205,6 @@ table {
   }
 }
 
-.wavy-line-container {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
-}
-
-.about-bio {
-  font-family: "Inter", sans-serif;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-
-  a {
-    text-decoration: none;
-    color: var(--off-white);
-    font-weight: bold;
-  }
-}
-
 /* CONTACT SECTION  */
 .contacts {
   text-align: center;
@@ -234,7 +220,7 @@ table {
 
 #copy-btn {
   cursor: pointer;
-  width: 140px;
+  width: 160px;
   position: absolute;
   left: 92%;
   bottom: 0;
@@ -262,25 +248,70 @@ table {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .hero {
+    padding: 50px;
+  }
   .hero h1,
   .nav-link,
   .contact-link {
     font-size: 70px;
   }
+  .project-row{
+    padding: 0 30px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero h1,
   .nav-link,
   .contact-link {
-    font-size: 46px;
+    font-size: 50px;
   }
   .about-bio {
     font-size: 30px;
   }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 10px;
+  }
+
+  .hero h1,
+  .nav-link,
+  .contact-link {
+    font-size: 40px;
+  }
+
+  .about-bio {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .education-workshops-container {
+    padding: 0 10px;
+  }
+
+  .project-row {
+    padding: 0 20px;
+  }
+
   .project-row a {
     font-size: 20px;
     font-weight: bold;
+  }
+
+  .project-name-link {
+    column-gap: 30px;
+  }
+
+  .arrow-link {
+    width: 70px;
+  }
+
+  #copy-btn {
+    width: 130px;
+    left: 82%;
   }
 }
