@@ -15,60 +15,64 @@
     <title>About - Diana Guerreiro</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <button class="logo">
-        <a href="./index.html"
-          ><img src="./images/menu-btn-to-open.svg" alt=""
-        /></a>
-      </button>
-      <nav>
-        <button id="btn-open" class="btn-menu btn-open">
-          <img src="./images/menu-btn-to-open.svg" alt="" />
+    <div class="wrapper wrapper-lg">
+      <header>
+        <button class="logo">
+          <a href="./index.html"
+            ><img src="./images/menu-btn-to-open.svg" alt=""
+          /></a>
         </button>
-        <div class="nav-menu">
-          <button id="btn-close" class="btn-menu btn-close">
-            <img src="./images/menu-btn-to-close.svg" alt="" id="svgOpen" />
+        <nav>
+          <button id="btn-open" class="btn-menu btn-open">
+            <img src="./images/menu-btn-to-open.svg" alt="" />
           </button>
-          <ul class="list-nav-links">
-            <li><a href="./about.html" class="nav-link selected">about</a></li>
-            <li><a href="./work.html" class="nav-link">work</a></li>
-            <li><a href="./contact.html" class="nav-link">contact</a></li>
-          </ul>
+          <div class="nav-menu">
+            <button id="btn-close" class="btn-menu btn-close">
+              <img src="./images/menu-btn-to-close.svg" alt="" id="svgOpen" />
+            </button>
+            <ul class="list-nav-links center">
+              <li>
+                <a href="./about.html" class="nav-link selected">about</a>
+              </li>
+              <li><a href="./work.html" class="nav-link">work</a></li>
+              <li><a href="./contact.html" class="nav-link">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="about-section">
+        <div class="about-bio">
+          <h3>
+            I'm Diana Guerreiro and I'm a front-end developer currently based in
+            Lisbon, Portugal.
+          </h3>
+          <p>
+            Working on web (design and) development, with a focus on exploring
+            the possibilities at the intersection of creativity and technology.
+            Mediating experimentation, sustainability and accessibility.
+            Interested in multidisciplinarity and interdisciplinarity,
+            interactivity, creative coding, playfulness and (visual)
+            communication in times of shrinking attention spans.
+          </p>
         </div>
-      </nav>
-    </header>
-    
-    <main class="about-section">
-      <div class="about-bio">
-        <h3>
-          I'm Diana Guerreiro and I'm a front-end developer currently based in
-          Lisbon, Portugal.
-        </h3>
-        <p>
-          Working on web (design and) development, with a focus on exploring the
-          possibilities at the intersection of creativity and technology.
-          Mediating experimentation, sustainability and accessibility.
-          Interested in multidisciplinarity and interdisciplinarity,
-          interactivity, creative coding, playfulness and (visual) communication
-          in times of shrinking attention spans.
-        </p>
-      </div>
-      <div class="education-workshops-container">
-        <div class="education-container">
-          <h3>Education</h3>
-          <table>
-            <tbody id="education"></tbody>
-          </table>
+        <div class="education-workshops-container">
+          <div class="education-container">
+            <h3>Education</h3>
+            <table>
+              <tbody id="education"></tbody>
+            </table>
+          </div>
+          <div class="workshops-container">
+            <h3>Workshops</h3>
+            <table>
+              <tbody id="workshops"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="workshops-container">
-          <h3>Workshops</h3>
-          <table>
-            <tbody id="workshops"></tbody>
-          </table>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
+
     <script src="./hamb-menu.js"></script>
     <script src="./showEducationWorkshops.js"></script>
   </body>

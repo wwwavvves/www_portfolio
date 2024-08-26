@@ -24,7 +24,7 @@ function displayEducation(education) {
       const tableRow = document.createElement("tr");
       tableRow.innerHTML = `
       <td>${element.year}</td>
-      <td>${element.degree}</td>
+      <td>${element.degree}, ${element.institution}</td>
     `;
       educationContainer.appendChild(tableRow);
     });
@@ -39,7 +39,7 @@ function displayWorkshops(workshops) {
       const tableRow = document.createElement("tr");
       tableRow.innerHTML = `
       <td>${element.year}</td>
-      <td>${element.title}</td>
+      <td>${element.title} (w/ ${element.instructor})</td>
     `;
       workshopsContainer.appendChild(tableRow);
     });
