@@ -1,7 +1,8 @@
 :root {
   --off-black: #1b1212;
   --off-white: #faf9f6;
-  --primary-color: #aba9ce;
+  /* --primary-color: #aba9ce; */
+  --primary-color: #afadcc;
   --secondary-color: #ffb7f8;
   --fun-font: "Pilowlava Regular";
   --fun-font-hover: "Pilowlava Atome";
