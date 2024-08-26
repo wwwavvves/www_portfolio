@@ -153,13 +153,11 @@ header {
 /* ABOUT */
 .about-bio {
   font-size: 50px;
-  padding: 0 30px;
 }
 
 .education-workshops-container {
   background-color: var(--primary-color);
   margin-top: 90px;
-  padding: 0 30px;
 }
 
 .education-container {
@@ -257,9 +255,20 @@ table {
   .contact-link {
     font-size: 70px;
   }
+
+  .about-bio {
+  padding: 0 30px;
+}
+
+.education-workshops-container {
+  padding: 0 30px;
+}
+
   .project-row{
     padding: 0 30px;
   }
+
+
 }
 
 @media (max-width: 768px) {
