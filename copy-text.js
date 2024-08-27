@@ -7,6 +7,6 @@ copySvg.addEventListener("click", e => {
   setTimeout(() => {
   document.getElementById("overlay").style.display = "none";
   copySvg.src = "./images/copy.svg";
-  }, 3000);
+  }, 1000);
   
 });
