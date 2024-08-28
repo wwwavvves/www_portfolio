@@ -1,5 +1,5 @@
 // Fetch the JSON data
-fetch("data.json")
+fetch("../data/data.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
@@ -44,7 +44,7 @@ function displayProjects(projects) {
                 </div>
                 <div>
                     <a href=${element.link} target="_blank">
-                        <img src="./images/arrow_blank_link.svg" alt="" width="160px" class="arrow-link">
+                        <img src="../images/arrow_blank_link.svg" alt="" width="160px" class="arrow-link">
                     </a>
                 </div>
               </div>

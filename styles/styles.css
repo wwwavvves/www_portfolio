@@ -195,6 +195,14 @@ table {
     color: var(--off-white);
     font-weight: 500;
     line-height: 1;
+    word-break: auto;
+    hyphens: auto;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
   }
 
   p {
@@ -237,16 +245,18 @@ table {
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(./images/squiggles.svg); /* Black background with opacity */
-  z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+  background-image: url('./images/squiggles7.svg');
+
+
+  z-index: -1;
   cursor: pointer; /* Add a pointer on hover */
 }
 
