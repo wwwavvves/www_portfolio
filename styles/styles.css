@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: "Pilowlava Regular";
-  src: url(./font/pilowlava-regular.woff2);
+  src: url(../font/pilowlava-regular.woff2);
 }
 
 @font-face {
   font-family: "Pilowlava Atome";
-  src: url(./font/pilowlava-atome.woff2);
+  src: url(../font/pilowlava-atome.woff2);
 }
 
 * {
