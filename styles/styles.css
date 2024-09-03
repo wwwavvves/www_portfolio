@@ -1,7 +1,6 @@
 :root {
   --off-black: #1b1212;
   --off-white: #faf9f6;
-  /* --primary-color: #aba9ce; */
   --primary-color: #afadcc;
   --secondary-color: #ffb7f8;
   --fun-font: "Pilowlava Regular";
@@ -63,24 +62,23 @@ header {
 
 .logo {
   margin: 10px;
+  background: none;
+  border: none;
 
   img {
     width: 80px;
     height: 80px;
   }
-
-  background: none;
-  border: none;
 }
 
 .btn-menu {
   margin: 10px;
+  cursor: pointer;
 
   img {
     width: 80px;
     height: 80px;
   }
-  cursor: pointer;
 }
 
 .nav-menu {
@@ -254,7 +252,6 @@ table {
   right: 0;
   bottom: 0;
   background-image: url("../images/dots.svg");
-
   z-index: -1;
   cursor: pointer;
 }
@@ -273,6 +270,7 @@ table {
   .hero {
     padding: 50px;
   }
+  
   .hero h1,
   .nav-link,
   .contact-link {
@@ -298,6 +296,7 @@ table {
   .contact-link {
     font-size: 50px;
   }
+
   .about-bio {
     font-size: 30px;
   }
