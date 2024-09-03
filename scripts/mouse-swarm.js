@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const swarmContainer = document.getElementById("swarm");
   const numSvgs = 7; // Number of SVGs in the swarm
-  const delay = 3; // Delay in frames for each SVG
+  const delay = 4; // Delay in frames for each SVG
   const positions = []; // Array to store mouse positions
   const svgs = []; // Array to store SVG elements
 
-  // Function to create circles and ellipses with unique colors
+  // Function to create circles with different radii and unique colors
   function createShape(index) {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("width", "200");
@@ -13,54 +13,31 @@ document.addEventListener("DOMContentLoaded", () => {
     svg.setAttribute("viewBox", "0 0 200 200");
     svg.classList.add("swarm");
 
-    if (index % 2 === 0) {
-      // Circles
-      const circle = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "circle"
-      );
-      circle.setAttribute("cx", "100");
-      circle.setAttribute("cy", "100");
-      circle.setAttribute("r", index === 6 ? "50" : "80"); // Different size for the last circle
-      switch (index) {
-        case 0:
-          circle.setAttribute("fill", "#000BFF"); // Blue
-          break;
-        case 2:
-          circle.setAttribute("fill", "#B4FFB2"); // Light green
-          break;
-        case 4:
-          circle.setAttribute("fill", "#DFC6FF"); // Light purple
-          break;
-        case 6:
-          circle.setAttribute("fill", "#FFB7F8"); // Pink
-          break;
-      }
-      svg.appendChild(circle);
-    } else {
-      // Ellipses
-      const ellipse = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "ellipse"
-      );
-      ellipse.setAttribute("cx", "100");
-      ellipse.setAttribute("cy", "100");
-      ellipse.setAttribute("rx", "90");
-      ellipse.setAttribute("ry", "50");
-      switch (index) {
-        case 1:
-          ellipse.setAttribute("fill", "#FFCC00"); // Yellow
-          break;
-        case 3:
-          ellipse.setAttribute("fill", "#FF0000"); // Red
-          break;
-        case 5:
-          ellipse.setAttribute("fill", "#FF8A00"); // Orange
-          break;
-      }
-      svg.appendChild(ellipse);
-    }
+    // Create a circle with varying radius based on the index
+    const circle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+    circle.setAttribute("cx", "100");
+    circle.setAttribute("cy", "100");
 
+    // Different radius for each circle
+    const radii = [60, 70, 80, 50, 90, 40, 100];
+    circle.setAttribute("r", radii[index % radii.length]);
+
+    // Assign unique colors to each circle
+    const colors = [
+      "#000BFF",
+      "#FFCC00",
+      "#B4FFB2",
+      "#FF0000",
+      "#DFC6FF",
+      "#FF8A00",
+      "#FFB7F8",
+    ];
+    circle.setAttribute("fill", colors[index % colors.length]);
+
+    svg.appendChild(circle);
     return svg;
   }
 
@@ -73,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       positions.push({ x: initialMousePos.x, y: initialMousePos.y });
     }
 
-    // Create SVG elements with circles and ellipses
+    // Create SVG elements with circles
     for (let i = 0; i < numSvgs; i++) {
       const svg = createShape(i);
       swarmContainer.appendChild(svg);
