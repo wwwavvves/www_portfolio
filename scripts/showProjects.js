@@ -43,8 +43,8 @@ function displayProjects(projects) {
                     </p>
                 </div>
                 <div>
-                    <a href=${element.link} target="_blank">
-                        <img src="../images/arrow_blank_link.svg" alt="" width="160px" class="arrow-link">
+                    <a href=${element.link} target="_blank" class="arrow-link">
+                        <img src="../images/arrow_blank_link.svg" alt="" width="160px" class="arrow-link-image">
                     </a>
                 </div>
               </div>

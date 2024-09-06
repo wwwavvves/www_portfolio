@@ -21,6 +21,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+        <link
+      rel="preload"
+      href="./font/pilowlava-atome.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./font/pilowlava-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <title>Contact - Diana Guerreiro</title>
   </head>
   <body>
@@ -54,7 +67,10 @@
         <div class="email-container">
           <span class="contact-link" id="email"
             >Email
-            <img src="../images/copy.svg" alt="Button to copy email" id="copy-btn" />
+            <span class="copy-image-container">
+              <img src="../images/copy.svg" alt="Button to copy email" id="copy-btn" />
+            </span>
+            
           </span>
         </div>
         <div>

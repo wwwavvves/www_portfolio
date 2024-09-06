@@ -81,6 +81,16 @@ header {
   }
 }
 
+.logo,
+.btn-menu,
+.arrow-link,
+.copy-image-container {
+  :hover {
+    transition: all 400ms ease-in-out;
+    transform: translateY(5px);
+  }
+}
+
 .nav-menu {
   position: fixed;
   background-color: var(--secondary-color);
@@ -154,6 +164,10 @@ header {
 /* ABOUT */
 .about-bio {
   font-size: 50px;
+
+  h3 {
+    margin-bottom: 30px;
+  }
 }
 
 .education-workshops-container {
@@ -335,7 +349,7 @@ table {
     column-gap: 30px;
   }
 
-  .arrow-link {
+  .arrow-link-image {
     width: 70px;
   }
 
