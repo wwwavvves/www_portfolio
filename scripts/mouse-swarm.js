@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Assign unique colors to each circle
     const colors = [
-      "#000BFF",
-      "#FFCC00",
-      "#B4FFB2",
-      "#FF0000",
-      "#DFC6FF",
-      "#FF8A00",
-      "#FFB7F8",
+      "#000BFF", // blue
+      "#FFCC00",  // yellow
+      "#B4FFB2", // green
+      "#FF0000", // red
+      "#DFC6FF", // lavander
+      "#FF8A00", // orange
+      "#FFB7F8", // pink
     ];
     circle.setAttribute("fill", colors[index % colors.length]);
 

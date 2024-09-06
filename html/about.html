@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"  content="Diana Guerreiro is a front-end developer based in Lisbon (PT)." />
-        <meta name="keywords" content="web design, front-end development, web development, creative coding, portfolio, html, css, javascript, react, p5js" />
+    <meta
+      name="description"
+      content="Diana Guerreiro is a front-end developer based in Lisbon (PT)."
+    />
+    <meta
+      name="keywords"
+      content="web design, front-end development, web development, creative coding, portfolio, html, css, javascript, react, p5js"
+    />
     <meta name="author" content="Diana Guerreiro" />
     <meta name="designer" content="Diana Guerreiro" />
     <meta name="copyright" content="Diana Guerreiro" />
     <meta name="owner" content="Diana Guerreiro" />
-    <meta name="language" content="EN">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="../images/menu-btn-to-open.svg" type="image/x-icon">
+    <meta name="language" content="EN" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="icon"
+      href="../images/menu-btn-to-open.svg"
+      type="image/x-icon"
+    />
     <!-- stylesheet -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <!-- font inter -->
@@ -21,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-        <link
+    <link
       rel="preload"
       href="./font/pilowlava-atome.woff2"
       as="font"
@@ -36,21 +46,30 @@
     />
     <title>About - Diana Guerreiro</title>
   </head>
-  <body>
+  <body class="bg-special">
     <div class="wrapper wrapper-lg">
       <header>
         <button class="logo">
           <a href="../index.html"
-            ><img src="../images/menu-btn-to-open.svg" alt="Link to the homepage"
+            ><img
+              src="../images/menu-btn-to-open.svg"
+              alt="Link to the homepage"
           /></a>
         </button>
         <nav>
           <button id="btn-open" class="btn-menu btn-open">
-            <img src="../images/menu-btn-to-open.svg" alt="Button to open menu" />
+            <img
+              src="../images/menu-btn-to-open.svg"
+              alt="Button to open menu"
+            />
           </button>
           <div class="nav-menu">
             <button id="btn-close" class="btn-menu btn-close">
-              <img src="../images/menu-btn-to-close.svg" alt="Button to close menu" id="svgOpen" />
+              <img
+                src="../images/menu-btn-to-close.svg"
+                alt="Button to close menu"
+                id="svgOpen"
+              />
             </button>
             <ul class="list-nav-links center">
               <li>
@@ -66,32 +85,34 @@
       <main class="about-section">
         <div class="about-bio">
           <h3>
-            I'm Diana Guerreiro and I'm a front-end developer based in
-            Lisbon, Portugal.
+            I'm Diana Guerreiro and I'm a front-end developer based in Lisbon,
+            Portugal.
           </h3>
           <p>
             Working on web (design and) development, with a focus on exploring
             the possibilities at the intersection of creativity and technology.
-            Interested in multi- and interdisciplinarity,
-            interactivity, creative coding, playfulness and (visual)
-            communication in times of shrinking attention spans. Hoping to contribute to a softer, slower, more environmentally sustainable and accessible internet.
+            Interested in multi- and interdisciplinarity, interactivity,
+            creative coding, playfulness and (visual) communication in times of
+            shrinking attention spans. Hoping to contribute to a softer, slower,
+            more environmentally sustainable and accessible internet.
           </p>
         </div>
-        <div class="education-workshops-container">
-          <div class="education-container">
-            <h3>Education</h3>
-            <table>
-              <tbody id="education"></tbody>
-            </table>
-          </div>
-          <div class="workshops-container">
-            <h3>Workshops</h3>
-            <table>
-              <tbody id="workshops"></tbody>
-            </table>
-          </div>
-        </div>
       </main>
+    </div>
+
+    <div class="education-workshops-container">
+      <div class="education-container">
+        <h3>Education</h3>
+        <table>
+          <tbody id="education"></tbody>
+        </table>
+      </div>
+      <div class="workshops-container">
+        <h3>Workshops</h3>
+        <table>
+          <tbody id="workshops"></tbody>
+        </table>
+      </div>
     </div>
 
     <script src="../scripts/hamb-menu.js"></script>
