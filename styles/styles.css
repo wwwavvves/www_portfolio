@@ -165,6 +165,17 @@ header {
   left: 0;
 }
 
+#mobile-swarm {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+svg {
+  position: absolute;
+  z-index: 1;
+}
+
 /* ABOUT */
 .bg-special {
   background-color: white;
