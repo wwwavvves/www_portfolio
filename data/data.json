@@ -71,6 +71,14 @@
       "description": "Built with HTML, CSS and React",
       "year": 2024,
       "link": "https://shecodes-react-dictionary-dg.netlify.app"
+    },
+    {
+      "id": 10,
+      "title": "To-Do List (prototype)",
+      "task": "Design and development",
+      "description": "Built with HTML, CSS and JavaScript",
+      "year": 2025,
+      "link": "https://to-do-list-but-with-an-available-url.netlify.app/"
     }
   ],
   "education": [
