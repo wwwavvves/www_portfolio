@@ -140,60 +140,66 @@
     },
     {
       "id": 6,
-      "title": "Playing with PoseNet in ML5",
+      "title": "Intro to ML5.js for Creative Machine Learning in the Browser",
       "instructor": "Erik Katerborg",
       "year": "2021"
     },
     {
       "id": 7,
+      "title": "Playing with PoseNet in ML5",
+      "instructor": "Erik Katerborg",
+      "year": "2021"
+    },
+    {
+      "id": 8,
       "title": "Painting a website",
       "instructor": "Ryan Scheuer",
       "year": "2022"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Creative web design: planning and coding from scratch",
       "instructor": "DXR Zone - Rifke Sadleir and Dan Baragwanath",
       "year": "2022"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Creative coding: making visuals with JavaScript",
       "instructor": "Bruno Imbrizi",
       "year": "2022"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Good old d(AI)s: image datasets and algorithm-based creative explorations",
       "instructor": "Aarati Akkapeddi",
       "year": "2022"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "N(AI)ve poetry collaborations",
       "instructor": "Andreas Refsgaard",
       "year": "2022"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "AI playground: learn to fingerp(AI)nt with words",
       "instructor": "Computational Mama",
       "year": "2022"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "Composing chrom(AI)tic resonances: turn images into short musical scores",
       "instructor": "Soyun Park",
       "year": "2022"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "Synthesize_Her: Quantum Listening for sound technology & sound wave theory",
       "instructor": "Viva Dean",
       "year": "2023"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "Color Theory: Exploration & Application",
       "instructor": "Richard Mehl",
       "year": "~"
