@@ -203,6 +203,12 @@
       "title": "Color Theory: Exploration & Application",
       "instructor": "Richard Mehl",
       "year": "~"
+    },
+    {
+      "id": 17,
+      "title": "Designing with Python: Programming for a Visual Context",
+      "instructor": "Alexandre B. A. Villares",
+      "year": "~"
     }
   ]
 }
